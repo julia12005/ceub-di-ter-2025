@@ -1,0 +1,65 @@
+/*
+padrão da sintax
+
+seletor
+{
+    propriedade : valor:
+    propriedade2 : valor2:
+}
+*/
+
+h3
+{
+    color : rebeccapurple;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/*CLASSE SELECTOR*/
+
+.destaque
+{
+    background-color: aquamarine;
+}
+
+/*ID SELECTOR*/
+
+#titulo_secundario
+{
+    font-style: italic;
+    color: #bb1068ee;
+}
+p b
+{
+    font-family: 'Arial';
+    color: blueviolet;
+}
+ul li
+{
+    text-align: center;
+}
+
+.botao_default 
+{
+    background-color: #03322f;
+    color: aliceblue;
+    padding: 8px 16px 8px 16px;
+    border: 2px solid #0cc8bb;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.botao_default:hover
+{
+    background-color: #03322f;
+    color: rgb(3, 58, 57);
+    padding: 8px 16px 8px 16px;
+    border: 2px solid #022d2a;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.8s;
+}
