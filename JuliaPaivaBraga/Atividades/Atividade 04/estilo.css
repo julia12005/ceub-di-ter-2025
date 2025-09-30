@@ -1,0 +1,136 @@
+/* ====== ESTILOS GERAIS ====== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9b3ff; /* fundo roxo claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ====== TÍTULOS ====== */
+h1 {
+    text-align: center;
+    color: #555; /* cinza escuro suave */
+    margin: 20px 0;
+    text-decoration: underline;
+}
+
+h2 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 2.2;   /* espaçamento entre as linhas */
+    text-align: center; /* centralizado */
+}
+
+/* ====== CABEÇALHO E MENU ====== */
+header {
+    background-color: #fcd6f7; /* rosinha claro */
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;              /* organiza em linha */
+    justify-content: center;    /* centraliza */
+    gap: 30px;                  /* espaço entre os links */
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: inline-block;
+    background-color: #fcd6f7;  /* caixinhas rosadas */
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid #e6a6d6;
+}
+
+nav a:hover {
+    background-color: #ffe680;  /* amarelo no hover */
+    color: #333;
+    border: 1px solid #ffcc00;
+    transition: 0.3s;
+}
+
+/* ====== SEÇÕES ====== */
+section {
+    background-color: #ffe6f7; /* rosa bem clarinho */
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* ====== SINOPSE ====== */
+#Sinopse p {
+    background-color: #fff0fa; /* caixinhas separadas */
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    border: 1px solid #e6cce0;
+}
+
+/* ====== LISTAS ====== */
+ul li {
+    margin: 6px 0;
+    text-align: left;
+}
+
+/* ====== LINKS GERAIS ====== */
+a {
+    color: #555;
+}
+
+a:hover {
+    color: yellow;
+}
+
+/* ====== IMAGEM ====== */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+/* ====== BOTÃO IMDb ====== */
+a[target="_blank"] {
+    display: inline-block;
+    background-color: #e68ab8; /* rosa mais escuro */
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #b35f87;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+a[target="_blank"]:hover {
+    background-color: #ffe680; /* amarelo no hover */
+    color: #333;
+    border: 1px solid #ffcc00;
+    transition: 0.5s;
+}
+
