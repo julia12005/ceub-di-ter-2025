@@ -1,0 +1,502 @@
+:root {
+    --primary: #c48eed;
+    --secondary: #220a36;
+    --text-color: #f5f5f5;
+    --text-secondary: #e587e0;
+    --text-tertiary: #000000;
+}
+
+* {
+    font-family: Ubuntu;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#disclamer {
+    width: 35vw;
+    min-width: 280px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+
+.foto-perfil {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#disclamer h1,
+#disclamer p {
+    text-align: center;
+    padding: 0 10px;
+    max-width: 450px;
+    color: var(--text-color);
+}
+
+#footer {
+    width: 35vw;
+    position: fixed;
+    background: var(--secondary);
+    color: var(--text-secondary);
+    padding: 1em 1em;
+    margin-top: 30em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.footer-section p,
+.footer-section a {
+    display: block;
+    margin-bottom: 0.6em;
+    font-size: 0.9em;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Ícones */
+.footer-section i {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+#footer a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-left: 35vw;
+    width: calc(100vw - 35vw);
+}
+
+#menu-navegacao h1 {
+    background: var(--secondary);
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 1em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 20px 0;
+}
+
+.menu a {
+    background: var(--primary);
+    color: var(--text-tertiary);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 70%;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    background: var(--secondary);
+    color: var(--text-color);
+}
+
+
+#about-me h1 {
+    background: var(--secondary);
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 1em;
+}
+
+.text {
+    text-align: center;
+    padding: 1em;
+}
+
+#skills-interests h2 {
+    background: var(--primary);
+    color: var(--text-tertiary);
+    text-align: center;
+    padding: 0.5em;
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+#skills-interests .skills {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+#skills-interests ul {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+#projetos h1 {
+    background: var(--secondary);
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 1em;
+}
+
+.tipo-de-projeto {
+    text-align: center;
+    padding: 0.5em;
+}
+
+#feitos-na-faculdade {
+    background: var(--primary);
+    color: var(--text-tertiary);
+    text-align: center;
+    padding: 1em;
+}
+
+#pessoais {
+    background: var(--primary);
+    color: var(--text-tertiary);
+    text-align: center;
+    padding: 1em;
+}
+
+.projeto-card {
+    padding: 0.5em;
+}
+
+.projeto-card img {
+    max-height: 180px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#key-technologys h1 {
+    background: var(--secondary);
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 1em;
+}
+
+.technologys {
+    display: flex;
+    padding: 2em;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.technology {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-tertiary);
+    width: 18%;
+    min-width: 150px;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+#technology-1 {
+    background-image: url(../img/logos/github.png);
+}
+
+#technology-2 {
+    background-image: url(../img/logos/figma.png);
+}
+
+#technology-3 {
+    background-image: url(../img/logos/html.webp);
+}
+
+#technology-4 {
+    background-image: url(../img/logos/css.webp);
+}
+
+#technology-5 {
+    background-image: url(../img/logos/js.png);
+}
+
+#technology-6 {
+    background-image: url(../img/logos/Python.png);
+}
+
+#technology-7 {
+    background-image: url(../img/logos/C.png);
+}
+
+#technology-8 {
+    background-image: url(../img/logos/Blazor.png);
+}
+
+#technology-9 {
+    background-image: url(../img/logos/postgresql.png);
+}
+
+#technology-10 {
+    background-image: url(../img/logos/mysql.png);
+}
+
+.technology .technology-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+.technology {
+    width: 18%;
+    min-width: 150px;
+    text-align: center;
+    font-size: 0.7em;
+    color: var(--text-tertiary);
+}
+
+#certificates h1 {
+    background: var(--secondary);
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 1em;
+}
+
+.space-certificates {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0.5em;
+}
+
+.card-certificates {
+    width: 250px;
+    text-align: center;
+}
+
+.card-certificates img {
+    width: 100%;
+    height: auto;
+}
+
+#curriculum h1 {
+    background: var(--secondary);
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 1em;
+}
+
+#img-curriculum img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#form {
+    background: var(--primary);
+}
+
+#subscription-form h1 {
+    font-size: 1.2em;
+    background: var(--secondary);
+    color: var(--text-secondary);
+    padding: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;/
+}
+
+.form-group label {
+    color: var(--text-tertiary);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    color: var(--text-tertiary);
+    background-color: rgb(205, 197, 255);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 8px 12px;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-top: 1em;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+
+    #disclamer {
+        width: 40%;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    .technology {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    #disclamer {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 30px 10px;
+    }
+
+    #footer {
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+
+    main {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .menu a {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    #skills-interests h2 {
+        max-width: 60%;
+    }
+
+    .technology {
+        width: 45%;
+    }
+
+    .space-certificates {
+        flex-wrap: wrap;
+    }
+
+    .card-certificates {
+        width: 45%;
+    }
+
+    #img-curriculum img {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #disclamer h1 {
+        font-size: 1.4rem;
+    }
+
+    #disclamer p {
+        font-size: 0.9rem;
+    }
+
+    .foto-perfil {
+        width: 130px;
+        height: 130px;
+    }
+
+    .menu a {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    #skills-interests h2 {
+        max-width: 80%;
+    }
+
+    .technology {
+        width: 90%;
+    }
+
+    .technology .technology-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #projetos img {
+        max-height: 150px;
+    }
+
+    .space-certificates {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-certificates {
+        width: 90%;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
